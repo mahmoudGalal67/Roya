@@ -1,0 +1,1056 @@
+/* Global */
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "main";
+  src: url("../Gabriela-Regular.ttf");
+}
+@font-face {
+  font-family: "sub";
+  src: url("../Opaline.ttf");
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+.video video {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Back
+  to
+  top
+  button */
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  right: 15px;
+  bottom: 85px;
+  background: #149ddd;
+  color: #fff;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  background: #2eafec;
+  transition: background 0.2s ease-in-out;
+}
+
+.owl-item {
+  display: flex;
+  justify-content: center;
+}
+.owl-nav button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.owl-nav button span {
+  font-size: 65px !important;
+  color: aqua !important;
+}
+
+.owl-nav {
+  margin: 0 !important;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 0 15px;
+  font-size: 65px !important;
+  color: aqua !important;
+  display: flex;
+  justify-content: space-between;
+  top: 40%;
+  transform: translateY(-50%);
+}
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+a:hover {
+  color: rgb(92, 88, 88);
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+}
+
+.slick-slider .slick-arrow {
+  background-color: transparent !important;
+}
+.slick-dots {
+  bottom: -45px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 8px !important;
+}
+
+main {
+  width: 100%;
+}
+
+main .main-images {
+  min-width: 100%;
+  max-height: 280px;
+}
+
+main > img {
+  min-width: 100%;
+}
+
+/* Calling */
+
+.whatsUpp:hover .help {
+  opacity: 1;
+}
+
+.help {
+  position: absolute;
+  white-space: nowrap;
+  padding: 10px;
+  background: #feffff;
+  border-radius: 15px;
+  left: 82px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+/* Calling */
+
+/* Nav */
+
+/* NavBar */
+
+nav {
+  width: 100%;
+}
+nav .navbar {
+  background-color: #87afb1;
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+
+  margin: auto;
+  /* background: red; */
+  padding: 13px 20px;
+}
+.navbar .logo a {
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar .logo img {
+  width: 180px;
+}
+
+nav .navbar .nav-links {
+  line-height: 70px;
+  height: 100%;
+  display: flex;
+  align-items: end;
+}
+nav .navbar .links {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+nav .navbar .links li {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+nav .navbar .links li a {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 31px; /* 206.667% */
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px 16.7px 2px 17px;
+}
+
+nav .navbar .links li a:hover {
+  color: #daa900 !important;
+}
+
+.links li:hover .Homepage-arrow {
+  transform: rotate(180deg);
+}
+.links li:hover .offers-arrow {
+  transform: rotate(180deg);
+}
+
+nav .navbar .links li .arrow {
+  /* background: red; */
+  height: 100%;
+  width: 15px;
+  cursor: pointer;
+  line-height: 70px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+nav .navbar .links li .sub-menu {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  line-height: 40px;
+  background: #87afb1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
+  display: none;
+  z-index: 2;
+}
+nav .navbar .links li:hover .Homepage-sub-menu,
+nav .navbar .links li:hover .test-sub-menu,
+nav .navbar .links li:hover .offers-sub-menu {
+  display: block;
+}
+.navbar .links li .sub-menu li {
+  padding: 0 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.navbar .links li .sub-menu a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.navbar .links li .sub-menu .more-arrow {
+  line-height: 40px;
+  transform: rotate(90deg);
+}
+
+.navbar .links li .sub-menu .more-sub-menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border-radius: 0 4px 4px 4px;
+  z-index: 1;
+  display: none;
+}
+.links li .sub-menu .more:hover .more-sub-menu {
+  display: block;
+}
+
+.navbar .nav-links .sidebar-logo {
+  display: none;
+}
+.navbar .bx-x {
+  cursor: pointer;
+  font-size: 35px;
+}
+.navbar .bx-menu img {
+  width: 40px;
+}
+.navbar .bx-menu {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 920px) {
+  main .video {
+    top: 250px;
+  }
+
+  nav .navbar .logo a {
+    font-size: 27px;
+  }
+  nav .navbar .links li {
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+  nav .navbar .links li a {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  nav .navbar {
+    height: auto;
+  }
+  nav .navbar .links li {
+    padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  nav .navbar {
+    background-color: transparent;
+  }
+  nav .navbar .links li .arrow.test-more-arrow {
+    transform: rotate(90deg);
+  }
+  nav .navbar .links li .arrow.Slimming-more-arrow {
+    transform: rotate(90deg);
+  }
+  nav .navbar .links li .arrow.Gynecology-more-arrow {
+    transform: rotate(90deg);
+  }
+  nav .navbar .links li .arrow.Infertility-more-arrow {
+    transform: rotate(90deg);
+  }
+  nav {
+    height: 0;
+  }
+  .info.mobile .options {
+    justify-content: start;
+    width: 100%;
+    padding: 0 25px;
+  }
+  .navbar .bx-menu {
+    display: block;
+    position: absolute;
+    top: 107px;
+    right: 36px;
+  }
+  nav .navbar .nav-links {
+    position: fixed;
+    top: 0;
+    left: -112%;
+    display: block;
+    max-width: 400px;
+    width: 100%;
+    background: #87afb1;
+    line-height: 40px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+  .navbar .logo img {
+    width: 120px;
+  }
+  .navbar .nav-links .sidebar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .sidebar-logo .logo-name {
+    font-size: 25px;
+    color: #fff;
+  }
+  .sidebar-logo i,
+  .navbar .bx-menu {
+    font-size: 25px;
+    color: #fff;
+  }
+  nav .navbar .links {
+    display: block;
+    margin-top: 20px;
+  }
+  nav .navbar .links li .arrow {
+    line-height: 40px;
+  }
+  nav .navbar .links li {
+    display: block;
+  }
+  nav .navbar .links li .sub-menu {
+    position: relative;
+    top: 0;
+    box-shadow: none;
+    display: none;
+  }
+  nav .navbar .links li .sub-menu li {
+    border-bottom: none;
+  }
+  .navbar .links li .sub-menu .more-sub-menu {
+    display: none;
+    position: relative;
+    left: 0;
+  }
+  .navbar .links li .sub-menu .more-sub-menu li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar .links li .sub-menu .more-sub-menu {
+    display: none;
+  }
+  .navbar .links li .sub-menu .more span {
+    display: flex;
+    align-items: center;
+  }
+
+  .links li:hover .Homepage-arrow,
+  .links li:hover .test-arrow,
+  .links li:hover .offers-arrow {
+    transform: rotate(0deg);
+  }
+
+  .links li .sub-menu .more:hover .more-sub-menu {
+    display: none;
+  }
+  nav .navbar .links li:hover .Homepage-sub-menu {
+    display: none;
+  }
+  nav .navbar .links li:hover .offers-sub-menu {
+    display: none;
+  }
+  nav .navbar .links li:hover .test-more-sub-menu {
+    display: none;
+  }
+  nav .navbar .links li:hover .Slimming-sub-menu {
+    display: none;
+  }
+  nav .navbar .links li:hover .Gynecology-sub-menu {
+    display: none;
+  }
+  nav .navbar .links li:hover .Infertility-sub-menu {
+    display: none;
+  }
+  nav .navbar .nav-links.show1 .links .Homepage-sub-menu,
+  nav .navbar .nav-links.show6 .links .offers-sub-menu,
+  nav .navbar .nav-links.show2 .links .more .test-more-sub-menu,
+  nav .navbar .nav-links.show3 .links .more .Slimming-more-sub-menu,
+  nav .navbar .nav-links.show4 .links .more .Gynecology-more-sub-menu,
+  nav .navbar .nav-links.show5 .links .more .Infertility-more-sub-menu {
+    display: block !important;
+  }
+  .navbar .nav-links.show1 .links .Homepage-arrow {
+    transform: rotate(180deg);
+  }
+  .navbar .nav-links.show6 .links .offers-arrow {
+    transform: rotate(180deg);
+  }
+  .navbar .nav-links.show2 .links .test-more-arrow {
+    transform: rotate(270deg);
+  }
+  .navbar .nav-links.show3 .links .Slimming-more-arrow {
+    transform: rotate(270deg);
+  }
+  .navbar .nav-links.show4 .links .Gynecology-more-arrow {
+    transform: rotate(270deg);
+  }
+  .navbar .nav-links.show5 .links .Infertility-more-arrow {
+    transform: rotate(270deg);
+  }
+}
+@media (max-width: 370px) {
+  nav .navbar .nav-links {
+    max-width: 100%;
+  }
+}
+.nav * {
+  font-size: 14px !important;
+}
+
+.nav ul {
+  padding: 0 !important;
+}
+
+.nav {
+  background: #87afb1;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+/* Nav */
+.menus {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.menu-items {
+  position: relative;
+  font-size: 14px;
+}
+
+.menu-items a {
+  display: block;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu-items button {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  font-size: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+}
+
+button span {
+  margin-left: 3px;
+}
+
+.menu-items > a,
+.menu-items button {
+  text-align: left;
+  padding: 0.7rem 1rem;
+}
+
+.menu-items a:hover,
+.menu-items button:hover {
+  color: #fdb61c !important;
+}
+
+.arrow::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.28em;
+  vertical-align: 0.09em;
+  border-top: 0.42em solid;
+  border-right: 0.32em solid transparent;
+  border-left: 0.32em solid transparent;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  left: auto;
+  top: 83%;
+  box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
+    0 4px 6px -2px rgba(71, 63, 79, 0.16);
+  font-size: 0.875rem;
+  z-index: 9999;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  list-style: none;
+  background: #87afb1;
+
+  border-radius: 0.5rem;
+  display: none;
+}
+
+.dropdown.show {
+  display: block;
+}
+
+.dropdown .dropdown-submenu {
+  position: absolute;
+  left: 100%;
+  top: -7px;
+}
+
+.details p {
+  color: #fff;
+}
+
+/* Info */
+
+.info.mobile {
+  display: none;
+}
+
+.booking {
+  background-color: #6bd0d4;
+  width: max-content;
+  margin: 12px auto;
+  color: white;
+  box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6));
+}
+
+.info .options .lang {
+  width: 80px;
+}
+.info .options .humb {
+  width: 60px;
+}
+
+.info .options .logo {
+  width: 210px;
+  height: 90px;
+}
+.hero-image {
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.main.mobile .info {
+  padding: 0 12px;
+  position: absolute;
+  top: 42%;
+  left: 13px;
+  text-align: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.main.mobile .info .details {
+  color: #0e0e0f;
+  text-align: center;
+  font-family: PT Serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.main.mobile .info a,
+.main.mobile.info a {
+  color: #fff !important;
+  font-family: PT Serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  border-radius: 25.5px;
+  background: #87afb1;
+  padding: 4px 0;
+  width: 100px;
+  height: 32px;
+}
+
+.main.mobile.info a,
+.main.mobile.info a,
+main .video .info p,
+main .video .info p {
+  font-family: "main" !important;
+}
+
+.bottom .item span {
+  font-family: "sub" !important;
+  font-weight: bold !important;
+  font-size: 13px !important;
+}
+
+.info .social-icons {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  gap: 45px;
+  z-index: 1000;
+  border-radius: 45px;
+}
+.info .social-icons img {
+  width: 22px;
+}
+
+/* Info */
+
+/* Contact-Info */
+
+.contact-links {
+  color: #87afb1;
+  font-family: PT Serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.make-appointement:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: #d9d9d9;
+  z-index: -1;
+}
+
+.make-appointement .left .circle {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 22%;
+  left: 20%;
+  border-radius: 50%;
+  z-index: -1;
+  background: #87afb1;
+}
+
+.make-appointement h2 {
+  color: #87afb1;
+  font-family: PT Serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.make-appointement p {
+  color: #fff;
+  font-family: PT Serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.make-appointement a {
+  border-radius: 25px;
+  background: #87afb1;
+  padding: 14px;
+  color: #fff !important;
+  font-family: PT Serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 26px !important;
+  color: #6ae1d0 !important;
+}
+
+@media (max-width: 500px) {
+  .VaginismusTreatment .info h2,
+  .VaginismusTreatment .info h2 span {
+    font-size: 24px;
+  }
+}
+
+/* Book-appointement */
+
+.booking-appointement .left img {
+  height: 100%;
+}
+
+.booking-appointement .right {
+  background: #87afb1;
+}
+
+.booking-appointement .right h3,
+.booking-appointement .right span {
+  color: #fff;
+  font-family: PT Serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.booking-appointement .right span {
+  color: #d8b36a;
+}
+
+.booking-appointement .right p {
+  color: white;
+  font-size: 15px;
+  margin: 24px 0;
+}
+
+.booking-appointement .right form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.booking-appointement .right form input,
+.booking-appointement .right form textarea {
+  padding: 8px;
+  outline: none;
+  border-bottom: 1px solid lightgray;
+  background: none;
+}
+
+.booking-appointement .right button {
+  width: 136px;
+  height: 50px;
+  background: #d8b36a;
+  color: #fff;
+}
+
+.booking-appointement .right button:hover {
+  color: #d8b36a;
+  background: #fff;
+}
+
+/* Info */
+
+.info h2,
+.info h2 span {
+  color: #87afb1;
+  font-family: PT Serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.info h2 span {
+  color: rgb(56, 56, 65);
+}
+
+/* Details */
+
+.wrapper .details h2 {
+  color: white;
+}
+.wrapper .details {
+  flex: 1;
+  background: #87afb1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper .video {
+  flex: 1;
+}
+
+.main-title {
+  background: #87afb1;
+  color: #eaedef;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 136.364% */
+  text-transform: uppercase;
+}
+
+/* Benefits */
+
+.benefits .wrapper {
+  border-radius: 6px;
+  background: #eee;
+}
+
+.benefits .title {
+  margin: 6px 0;
+  color: #000;
+  font-family: PT Serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+/* Services */
+
+.services h2 {
+  text-align: center;
+  color: #87afb1;
+  font-family: PT Serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.services span {
+  color: rgb(56, 56, 65);
+}
+
+.services .card {
+  width: 300px;
+}
+
+.services .card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.services .card h3 {
+  color: #87afb1;
+  font-family: PT Serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 159.4%; /* 31.88px */
+  text-transform: capitalize;
+}
+
+.services .card p {
+  color: #606060;
+  font-family: PT Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 159.4%; /* 23.91px */
+  text-transform: capitalize;
+}
+
+.services .card button,
+.services .card a {
+  border-radius: 21px;
+  background: #87afb1;
+  padding: 12px 16px;
+  color: #fdb61c;
+  font-family: PT Serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.services .card a {
+  color: white !important;
+}
+
+.polygon {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: -1px;
+}
+
+/* Footer */
+
+footer {
+  font-family: PT Serif;
+  padding: 28px;
+  background: #87afb1;
+  color: white;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+footer ul li {
+  font-size: 14px;
+}
+
+footer ul li span {
+  font-weight: bold;
+}
+
+footer img {
+  width: 50px;
+  height: 30px;
+}
+
+footer .logo {
+  width: 280px;
+  height: 50px;
+}
+
+.nav.mobile {
+  display: none;
+}
+
+.nav.mobile .close {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav * {
+    font-size: 12px !important;
+  }
+  .main-title {
+    font-size: 16px;
+  }
+}
+.nav.mobile .close.show {
+  display: block;
+}
+@media (max-width: 600px) {
+  main .top {
+    height: 250px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav.mobile .close {
+    position: fixed;
+    z-index: 1000;
+    right: 35px;
+    top: 25px;
+    cursor: pointer;
+    font-size: 22px !important;
+  }
+  .call-options {
+    display: none !important;
+  }
+  .info.desktop {
+    display: none;
+  }
+  .info.mobile {
+    display: flex;
+  }
+  .video.desktop {
+    display: none;
+  }
+  main .top {
+    background-color: white !important;
+    height: max-content !important;
+  }
+  .nav.desktop {
+    display: none;
+  }
+  .nav.mobile {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    top: -100%;
+    left: 0;
+    width: 100%;
+  }
+  .nav.mobile.show {
+    top: 0;
+  }
+  .menus {
+    align-items: flex-start;
+  }
+  .dropdown {
+    left: 0;
+  }
+}

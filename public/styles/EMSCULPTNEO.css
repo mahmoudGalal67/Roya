@@ -1,0 +1,60 @@
+.offers-section {
+  padding: 25px;
+}
+
+.offers {
+  padding: 45px;
+  border-radius: 6px;
+  background: #eee;
+}
+
+.offers h3 {
+  color: #000;
+  text-align: center;
+  font-family: PT Serif;
+  font-size: 29px;
+  text-transform: capitalize;
+}
+
+.offers .wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.offers .wrapper .item {
+  gap: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.offers .wrapper .item div {
+  color: #87afb1;
+  font-family: Roboto;
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 85px; /* 100% */
+}
+.offers .wrapper .item span {
+  color: #000;
+  text-align: center;
+  font-family: Roboto Slab;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 30px; /* 250% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.offers .wrapper .item p {
+  color: #6f6f6f;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}

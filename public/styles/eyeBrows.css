@@ -1,0 +1,68 @@
+.offers .card .title {
+  padding: 18px;
+  background: #87afb1;
+}
+
+.offers .card {
+  width: 350px;
+  background: #f9fafa;
+}
+.offers img {
+  width: auto;
+  height: auto;
+}
+
+.title p {
+  text-align: center;
+  color: white;
+  margin: 15px 0;
+}
+.offers .card .price h3 {
+  color: #555;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 52px; /* 80% */
+}
+
+.offers .card span {
+  color: #54595f;
+  text-align: center;
+  font-family: Roboto Slab;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.offers .card .title h3 {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28.8px; /* 120% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.bookNowButton {
+  border-radius: 4px;
+  background: #87afb1;
+  padding: 12px;
+  color: #fff !important;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px; /* 100% */
+}
+
+@media (max-width: 500px) {
+  .info h2,
+  .info h2 span {
+    font-size: 24px;
+  }
+}

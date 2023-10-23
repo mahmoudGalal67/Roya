@@ -1,0 +1,13 @@
+h2 {
+  color: #87afb1;
+  font-family: PT Serif;
+  font-size: 36px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+h2 span {
+  color: rgb(56, 56, 65);
+}

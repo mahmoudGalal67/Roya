@@ -1,0 +1,28 @@
+.about-us .left,
+.about-us .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-us h2 {
+  color: #606060;
+  text-align: justify;
+  font-family: PT Sans;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43px; /* 186.957% */
+  text-transform: capitalize;
+}
+
+.about-us p {
+  color: #606060;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 43px;
+  text-transform: capitalize;
+}

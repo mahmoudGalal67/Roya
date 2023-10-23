@@ -1,0 +1,21 @@
+.benefits .wrapper {
+  padding: 15px 0;
+}
+
+.benefits {
+  font-family: main;
+}
+
+.benefits h2 {
+  font-family: sans-serif;
+}
+
+.benefits h2 {
+  color: #87afb1;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125.4%; /* 45.144px */
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,8 @@
+.slider .slick-slider .slick-prev {
+  left: 20px;
+  z-index: 10;
+}
+.slider .slick-slider .slick-next {
+  right: 20px;
+  z-index: 10;
+}

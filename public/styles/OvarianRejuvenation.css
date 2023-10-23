@@ -1,0 +1,23 @@
+.benefits button {
+  margin: 18px 0;
+  padding: 12px 24px;
+  color: white;
+  font-family: PT Serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  border-radius: 21px;
+  background: #87afb1;
+}
+
+@media (max-width: 500px) {
+  .info h2,
+  .info h2 span {
+    font-size: 24px;
+  }
+  .wrapper .details2 h2 {
+    font-size: 24px;
+  }
+}

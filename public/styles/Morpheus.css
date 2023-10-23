@@ -1,0 +1,92 @@
+.morphies .details-wrapper {
+  border-radius: 30px;
+  background: #67c7c3;
+}
+.morphies .details-wrapper .info-span {
+  color: #f6c002;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+}
+.morphies .details-wrapper .info-p {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: center;
+}
+
+.morphies h2 {
+  color: #222f66;
+  text-align: center;
+  font-family: PT Serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin: 35px 0;
+}
+
+.morphies .whats-app {
+  border-radius: 19px;
+  border: 3px solid #4bae50;
+  background: #87afb1;
+}
+
+.morphies .whats-app a {
+  color: #fff !important;
+  font-family: Quando;
+  font-size: 31px;
+  text-transform: uppercase;
+}
+
+.why .wrapper .left {
+  font-family: PT Serif;
+  font-size: 20px;
+  font-style: normal;
+  min-height: 100%;
+  color: #fff;
+  font-weight: 400;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  background: #87afb1;
+  padding: 36px;
+}
+
+.why .wrapper h3 {
+  color: #fff;
+  font-family: PT Serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 51px; /* 141.667% */
+  text-transform: uppercase;
+}
+
+.why .wrapper h3 span {
+  color: #daa900;
+}
+
+.location-info .map-card {
+  background-color: #87afb1;
+}
+
+.location-info .map-card .info {
+  color: white !important;
+}
+
+@media (max-width: 500px) {
+  .morphies .whats-app a {
+    font-size: 22px;
+  }
+  .why .wrapper h3 {
+    font-size: 26px;
+    line-height: normal;
+  }
+
+  .morphies .details-wrapper .info-span,
+  .morphies .details-wrapper .info-p {
+    font-size: 18px;
+  }
+}

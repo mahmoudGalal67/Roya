@@ -1,0 +1,91 @@
+/* Blogs */
+
+.card h3 {
+  margin: 15px 0;
+  color: #222f66;
+  font-family: PT Serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 159.4%; /* 31.88px */
+  text-transform: capitalize;
+}
+
+.card p {
+  margin: 12px 0;
+  color: #606060;
+  font-family: PT Sans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 159.4%; /* 23.91px */
+  text-transform: capitalize;
+}
+
+.card button {
+  width: 127px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #222f66;
+  background: white;
+  color: #222f66;
+  font-family: PT Serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 159.4%; /* 23.91px */
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+
+.card button:hover {
+  background: #222f66;
+  color: #fdb61c;
+}
+
+.slick-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white !important;
+}
+
+.info h3,
+.info-details h3 {
+  margin: 25px 0;
+  color: #3f3d3d;
+  text-align: justify;
+  font-family: PT Sans;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 108.696% */
+  text-transform: capitalize;
+}
+
+.info-details .left {
+  flex: 2;
+}
+.info-details .right {
+  flex: 1;
+}
+
+.info p,
+.info-details p {
+  color: #606060;
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+.slick-prev,
+.slick-next {
+  top: 180px;
+}
+
+@media (max-width: 600px) {
+  .slick-prev {
+    left: -10px;
+    z-index: 10;
+  }
+
+  .slick-next {
+    right: -10px;
+  }
+}

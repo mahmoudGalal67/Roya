@@ -1,0 +1,48 @@
+.SexuallyTransmittedDisease .benefits .wrapper {
+  border-radius: 6px;
+  background: #eee;
+}
+
+.SexuallyTransmittedDisease .benefits .title {
+  margin: 6px 0;
+  color: #000;
+  font-family: PT Serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.price-list .wrapper {
+  background: #eee;
+}
+
+.price-list .wrapper .item div {
+  color: #000203;
+  font-family: Roboto;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 136.842% */
+}
+
+.price-list .wrapper p {
+  color: #87afb1;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+.price-list .wrapper .item {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-list .wrapper .item .breakLine {
+  flex: 1;
+  border-bottom: 2px dotted lightgray;
+}
